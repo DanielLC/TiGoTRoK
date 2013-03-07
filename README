@@ -1,5 +1,4 @@
 ﻿This is a checklist of things that need to be done. Feel free to add or remove things from it as you see fit.
-Although, the forum might be a better place to put it: www.soulriders.net/forum/index.php/board,345.0
 -----
 
 GENERAL TIPS:
@@ -18,37 +17,18 @@ which causes the blushing to disappear in a bang after Kanae is gone.
 
 
 TODO CHECKLIST:
-First release is finished! Time to work on the second half of Chapter 5 and fix all the mistakes I (Zfish9) made on chapters 6-9 :D
 
-Rebuild KyonRoomRightClosed.png, it got the aforementioned Jagging due to indexed colors.
+A rename might be good. If so, we should do it immediately. The more people that download this first, the more people have to rename the folder.
 
-The fight scene needs work too, it's very static and bland. Needs more animations. (absence of many sprites is secondary)
+It might not have been a good idea to make the game pause for every sentence. Also, it might be better to have it say how the characters are talking by just printing out the text, as in KBDM-VN, or have it use the normal method to show speech, rather than this hybrid it has now.
 
-Segment the paragraphs in 7-8 more, using linebreaks. (to do from Watanabe's hidedout on.)
-Sometimes they flow in an uninterrupted wall of text without any user interaction until the screen is full, right now, and that's not good.
-Especially bad at the point when Ninja TsuruyaMaid is shown in chapter 7.
+Much of this needs to be changed to something different from KBDM-VN. In particular, we need a new title screen and a new icon. A real logo would be good too. Also, perhaps we should change the GENERAL TIPS to not reference a character from it.
 
-Search for "blush" in chapter 6. Haruhi should blush at one point, but her sprite doesn't do it.
+More music would be good.
 
-A few BGMs in the 6th chapter are sorta off. On that note, use SeishuniiJanaiKatsu more when fang-tan is around. Maybe when they storm the photo ring.
+Several backgrounds are needed, including outside a skyscraper, a lobby, a stairwell, a hallway, a roof, and possibly something about Kyon falling to his death.
 
-Fix the blush in TsuruyaTemplate.png. It was cropped and damaged badly.
-
-Design an awesome K:BDH logo.
-
-
-Background images that are needed:
-http://www.soulriders.net/forum/index.php/topic,102380.0
-
-Character templates that need to be created/"borrowed" (in order of appearance):
-http://www.soulriders.net/forum/index.php?topic=102347.0
-
-Geneeral discussion on BGs:
-http://www.soulriders.net/forum/index.php/topic,102419.0
-
-Other:
-Cuts, bruises, bandages, and other things that can be placed on characters like Blush can. (optional?)
-
+It may be interesting to make the game more interactive. For example, if you fail to ask Yuki to tell you if the IDSE is watching, you're liable to land on a spaceship when jumping off the roof. If Haruhi is too stressed, the world ends. If she's not stressed enough, Kyon hits the pavement, and then the world ends. And good luck getting the right amount of stress if you didn't as Koizumi to tell you if the world was ending.
 
 -----
 
@@ -60,9 +40,9 @@ For starters, you need Ren'Py, the visual novel engine that's used. That's an
 easy download and install; put it wherever. On your first run of Ren'Py, or
 thereafter through the Options screen, it asks you to select a project
 directory. Pick an empty directory somewhere, then put the directory containing
-this file—probably 'KBDH-VN'—into that empty directory. After that, you should
+this file—probably 'TiGoTRoK'—into that empty directory. After that, you should
 be able to click 'Select Project' from the Ren'Py main menu and select
-'KBDH-VN'.
+'TiGoTRoK'.
 
 After selecting the project, you can launch it or edit it from the Ren'Py
 menu. I personally use a separate editor, but Ren'Py comes with jEdit, which is

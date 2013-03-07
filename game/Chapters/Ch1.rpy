@@ -1,6 +1,3 @@
-# The prologue. Joy. Also, I do rather love Ren'py's multi-file mechanism.
-# Contains some pieces that are technically part of AO-1, but they're semantically right next to the prologue, so...
-
 label chapter1:
     stop music
     show text "{color=#00a}{size=40}Chapter One{/size}{/color}" at truecenter with fade

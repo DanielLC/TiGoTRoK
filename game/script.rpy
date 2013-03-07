@@ -1743,9 +1743,13 @@ init:
         repeat
     
     # Title cards
-    image creds 0 = Text("Presented by:\n\nBig Damn VN Brigade\n\nAgasa\nalethiophile\nFilraen\nOroboro\nPax Empyrean\nJason Ulloa\nZer0Null\n\n\nMany thanks to:\n\njonbob\nSpecular", text_align=0.5)
-    image creds 1 = Text("Special thanks to:\n\nBrian Randall\nauthor of Kyon: Big Damn Hero\n\nand\n\nNagaru Tanigawa\nauthor of Suzumiya Haruhi series", text_align=0.5)
-    image creds 2 = Text("Disclaimer: This production makes use\nof intellectual property belonging to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespect is intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumiya Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN", text_align=0.5)
+    image creds 0 = Text("Presented by:\n\nDaniel Carrier", text_align=0.5)
+    image creds 1 = Text("Special thanks to:\n\nEliezer Yudkowsky\nauthor of Trust in God, or, The Riddle of Kyon\n\nand\n\nNagaru Tanigawa\nauthor of Suzumiya Haruhi series", text_align=0.5)
+    image creds 2 = Text("Special thanks to:\n\nBig Damn VN Brigade\nWho made the Big Damn VN on which this is based", text_align=0.5)
+    image creds 3 = Text("Disclaimer: This production makes use\nof intellectual property belonging to\nEliezer Yudkowsky, Nagaru Tanigawa \nand others. No disrespect is intended.\n\nNeither Trust in God, or, The Riddle of Kyon \nnor Suzumiya Haruhi and related \ncharacters are owned by anyone \nassociated with DanielLC", text_align=0.5)
+    #image creds 0 = Text("Presented by:\n\nBig Damn VN Brigade\n\nAgasa\nalethiophile\nFilraen\nOroboro\nPax Empyrean\nJason Ulloa\nZer0Null\n\n\nMany thanks to:\n\njonbob\nSpecular", text_align=0.5)
+    #image creds 1 = Text("Special thanks to:\n\nBrian Randall\nauthor of Kyon: Big Damn Hero\n\nand\n\nNagaru Tanigawa\nauthor of Suzumiya Haruhi series", text_align=0.5)
+    #image creds 2 = Text("Disclaimer: This production makes use\nof intellectual property belonging to\nBrian Randall, Nagaru Tanigawa \nand others. No disrespect is intended.\n\nNeither Kyon: Big Damn Hero \nnor Suzumiya Haruhi and related \ncharacters are owned by anyone \nassociated with Big Damn VN", text_align=0.5)
 
     # have to have different image tags so can show them staggered
     image screds0 = Text("Big Damn VN Brigade presents:", text_align=0.5, size=30)
@@ -2129,6 +2133,10 @@ init -1 python:
         
     chapters = [
         [
+            ("Chapter 1", "chapter1", True)
+            ("Chapter 2", "chapter2", True)
+        ],
+        [
             ("In Media Res Prologue:\nExactly What it Says on the Tin", "prologue", True)
         ],
         [
@@ -2330,6 +2338,10 @@ label backtomain:
     return
 
 label start:
+    show black
+    show text "{color=#00a}{size=40}Trust in God{/size}\n{size=20}or{/size}\n{size=40}The Riddle of Kyon{/size}{/color}" at truecenter with fade
+    pause
+    jump chapter1
     # Z0 : intro. 
     stop music
     scene black
@@ -2375,6 +2387,10 @@ label credits:
     pause
     $ renpy.pause(.1, hard=True)
     # show Credits3 with dissolve
+    show creds 3 with Dissolve(1.0)
+    pause
+    $ renpy.pause(.1, hard=True)
+    # show Credits4 with dissolve
     # # Maybe a graphic logo here?
     hide creds with Dissolve(1.0)
     show BDVNlogo at truecenter with Dissolve(2.0)
