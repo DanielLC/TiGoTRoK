@@ -5,7 +5,7 @@ label chapter2:
     with fade
     pause
     play sound "SE/Pageflip3.mp3" 
-    scene bg TownStreetDay1 with fade:
+    scene bg TownStreetDay3 with fade:
     show Haruhi Hips Casual Ang4 at center with dissolve
     "When Haruhi arrived I was already waiting on the street, humming a cheerful tune to keep my spirits up - the opening melody from that history show with the sun rising over the horizon."
     nvl clear
@@ -39,7 +39,7 @@ label chapter2:
     "stormed Haruhi."
     nvl clear
     "I began to move toward the entrance to that structure, the dominating skyscraper, the tallest building in this area of downtown."
-    show bg TownStreetDay3 with fade
+    show bg TownCommercialDistrict_Day with fade
     "The morning sun blazed through the clear, calm air and gleamed like a hundred golden spotlights off the straight, flat sides of the towering building."
     nvl clear
     "Haruhi followed, making bloodthirsty threats in an effort to obtain information."
