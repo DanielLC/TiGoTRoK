@@ -2133,7 +2133,7 @@ init -1 python:
         
     chapters = [
         [
-            ("Chapter 1", "chapter1", True)
+            ("Chapter 1", "chapter1", True),
             ("Chapter 2", "chapter2", True)
         ],
         [
