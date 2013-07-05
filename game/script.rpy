@@ -346,6 +346,8 @@ init:
     image Haruhi Hips Casual Ang3 = "Sprites/Haruhi/HaruhiHipsCasualAngry3.png"
     image Haruhi Hips Casual Ang4 = "Sprites/Haruhi/HaruhiHipsCasualAngry4.png"
     image Haruhi Hips Casual Sigh1 = "Sprites/Haruhi/HaruhiHipsCasualSigh1.png"
+
+    image Haruhi Worry3 Flip = im.Flip("Sprites/Haruhi/HaruhiSideWorry3.png", horizontal=True)
     
     image Hblush = "Sprites/Haruhi/HaruhiSideBlush1.png"
     image Hblush Casual = "Sprites/Haruhi/HaruhiSideCasualBlush1.png"
@@ -1822,6 +1824,9 @@ init python:
     sister = Character("Nonoko", kind=basechar, color="#999977")
     yuki = Character("Nagato Yuki", kind=basechar, color="#aaaaff")
     narrator = Character(None, kind=basechar)
+    haruhi = Character("Haruhi", kind=basechar, color="#60403a")    #Isn't there a way to add outlines?
+    mikuru = Character("Mikuru", kind=basechar, color="#cf8266")
+    koizumi = Character("Koizumi", kind=basechar, color="#5b4737")
     irisoutfast = CropMove(0.2, "irisout")
     slowfadein = Fade(1.0, 0.5, 5)
     fastfadein = Fade(0.5, 0.5, 0.5)
@@ -1996,11 +2001,15 @@ transform center_left:
 transform TopRight:
     xalign 1.0 yalign 0.0
 transform TopLeft:
-    xalign 0.0 yalign 0.0      
+    xalign 0.0 yalign 0.0
 transform HalfRight:
     xalign 0.75 yalign 1.0
 transform HalfLeft:
     xalign 0.25 yalign 1.0
+transform ThirdRight:
+    xalign 0.667 yalign 1.0
+transform ThirdLeft:
+    xalign 0.333 yalign 1.0
 transform TenthRight:
     xalign 0.90 yalign 1.0
 transform TenthLeft:
@@ -2133,7 +2142,7 @@ init -1 python:
         
     chapters = [
         [
-            ("Chapter 1", "chapter1", True)
+            ("Chapter 1", "chapter1", True),
             ("Chapter 2", "chapter2", True)
         ],
         [
@@ -2396,7 +2405,7 @@ label credits:
     show BDVNlogo at truecenter with Dissolve(2.0)
     pause
     stop music fadeout 2
-    jump Preview
+    return
     
 label credits_roll:
     play music "Music/GodKnowsMetal(edit).ogg"
